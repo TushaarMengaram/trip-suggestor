@@ -1,0 +1,278 @@
+[
+    {
+      "name": "Manali",
+      "state": "Himachal Pradesh",
+      "bestSeason": ["Summer", "Winter"],
+      "budgetMin": 6000,
+      "budgetMax": 20000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 6,
+      "type": ["Adventure", "Nature"],
+      "description": "Snow-covered mountains and adventure activities."
+    },
+    {
+      "name": "Shimla",
+      "state": "Himachal Pradesh",
+      "bestSeason": ["Summer", "Winter"],
+      "budgetMin": 5000,
+      "budgetMax": 18000,
+      "idealDaysMin": 2,
+      "idealDaysMax": 4,
+      "type": ["Hill Station", "Nature"],
+      "description": "Cool weather, shopping and colonial buildings."
+    },
+    {
+      "name": "Munnar",
+      "state": "Kerala",
+      "bestSeason": ["Summer", "Winter"],
+      "budgetMin": 5000,
+      "budgetMax": 15000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 5,
+      "type": ["Nature", "Hill Station"],
+      "description": "Tea estates, waterfalls and national parks."
+    },
+    {
+      "name": "Sikkim",
+      "state": "Sikkim",
+      "bestSeason": ["Summer", "Winter"],
+      "budgetMin": 7000,
+      "budgetMax": 20000,
+      "idealDaysMin": 4,
+      "idealDaysMax": 6,
+      "type": ["Nature", "Adventure"],
+      "description": "Mountains, monasteries, and trekking."
+    },
+    {
+      "name": "Coorg",
+      "state": "Karnataka",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 6000,
+      "budgetMax": 16000,
+      "idealDaysMin": 2,
+      "idealDaysMax": 4,
+      "type": ["Nature", "Adventure"],
+      "description": "Coffee plantations and lush greenery."
+    },
+    {
+      "name": "Rishikesh",
+      "state": "Uttarakhand",
+      "bestSeason": ["Summer", "Winter"],
+      "budgetMin": 4000,
+      "budgetMax": 12000,
+      "idealDaysMin": 2,
+      "idealDaysMax": 5,
+      "type": ["Adventure", "Spiritual"],
+      "description": "Yoga, river rafting, and spiritual experiences."
+    },
+    {
+      "name": "Goa",
+      "state": "Goa",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 8000,
+      "budgetMax": 25000,
+      "idealDaysMin": 4,
+      "idealDaysMax": 7,
+      "type": ["Beach", "Party"],
+      "description": "Beaches, water sports, and vibrant nightlife."
+    },
+    {
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 6000,
+      "budgetMax": 20000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 5,
+      "type": ["Cultural", "Heritage"],
+      "description": "Forts, palaces, and rich cultural heritage."
+    },
+    {
+      "name": "Udaipur",
+      "state": "Rajasthan",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 7000,
+      "budgetMax": 18000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 5,
+      "type": ["Cultural", "Heritage"],
+      "description": "Romantic lakes, palaces, and temples."
+    },
+    {
+      "name": "Leh",
+      "state": "Ladakh",
+      "bestSeason": ["Summer", "Autumn"],
+      "budgetMin": 10000,
+      "budgetMax": 25000,
+      "idealDaysMin": 6,
+      "idealDaysMax": 10,
+      "type": ["Adventure", "Nature"],
+      "description": "High-altitude desert, monasteries, and mountain biking."
+    },
+    {
+      "name": "Darjeeling",
+      "state": "West Bengal",
+      "bestSeason": ["Summer", "Winter"],
+      "budgetMin": 5000,
+      "budgetMax": 15000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 5,
+      "type": ["Hill Station", "Nature"],
+      "description": "Tea gardens, toy train, and stunning views of Kanchenjunga."
+    },
+    {
+      "name": "Ooty",
+      "state": "Tamil Nadu",
+      "bestSeason": ["Summer", "Winter"],
+      "budgetMin": 5000,
+      "budgetMax": 13000,
+      "idealDaysMin": 2,
+      "idealDaysMax": 4,
+      "type": ["Hill Station", "Nature"],
+      "description": "Botanical gardens, lakes, and a pleasant climate."
+    },
+    {
+      "name": "Nainital",
+      "state": "Uttarakhand",
+      "bestSeason": ["Summer", "Winter"],
+      "budgetMin": 5000,
+      "budgetMax": 12000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 5,
+      "type": ["Hill Station", "Nature"],
+      "description": "Scenic lake, boating, and lush green surroundings."
+    },
+    {
+      "name": "Kochi",
+      "state": "Kerala",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 6000,
+      "budgetMax": 15000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 5,
+      "type": ["Cultural", "Beach"],
+      "description": "Backwaters, cultural performances, and seafood."
+    },
+    {
+      "name": "Alleppey",
+      "state": "Kerala",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 8000,
+      "budgetMax": 20000,
+      "idealDaysMin": 2,
+      "idealDaysMax": 5,
+      "type": ["Backwaters", "Nature"],
+      "description": "Houseboats, backwaters, and serene landscapes."
+    },
+    {
+      "name": "Andaman and Nicobar Islands",
+      "state": "Andaman and Nicobar Islands",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 15000,
+      "budgetMax": 30000,
+      "idealDaysMin": 5,
+      "idealDaysMax": 8,
+      "type": ["Beach", "Adventure"],
+      "description": "Pristine beaches, water sports, and marine life."
+    },
+    {
+      "name": "Kumarakom",
+      "state": "Kerala",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 8000,
+      "budgetMax": 20000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 6,
+      "type": ["Backwaters", "Nature"],
+      "description": "Tranquil backwaters, bird sanctuary, and coconut lagoons."
+    },
+    {
+      "name": "Varanasi",
+      "state": "Uttar Pradesh",
+      "bestSeason": ["Winter", "Autumn"],
+      "budgetMin": 5000,
+      "budgetMax": 12000,
+      "idealDaysMin": 2,
+      "idealDaysMax": 5,
+      "type": ["Spiritual", "Cultural"],
+      "description": "Ancient temples, Ganga Aarti, and spiritual experiences."
+    },
+    {
+      "name": "Kedarnath",
+      "state": "Uttarakhand",
+      "bestSeason": ["Summer", "Autumn"],
+      "budgetMin": 5000,
+      "budgetMax": 15000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 5,
+      "type": ["Spiritual", "Nature"],
+      "description": "Sacred temple, trekking, and scenic mountain views."
+    },
+    {
+      "name": "Tirupati",
+      "state": "Andhra Pradesh",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 4000,
+      "budgetMax": 8000,
+      "idealDaysMin": 1,
+      "idealDaysMax": 2,
+      "type": ["Spiritual", "Cultural"],
+      "description": "Famous temple, pilgrimage site, and religious importance."
+    },
+    {
+      "name": "Amritsar",
+      "state": "Punjab",
+      "bestSeason": ["Winter", "Spring"],
+      "budgetMin": 5000,
+      "budgetMax": 12000,
+      "idealDaysMin": 2,
+      "idealDaysMax": 4,
+      "type": ["Cultural", "Spiritual"],
+      "description": "Golden Temple, history, and spiritual significance."
+    },
+    {
+      "name": "Pondicherry",
+      "state": "Puducherry",
+      "bestSeason": ["Winter", "Summer"],
+      "budgetMin": 6000,
+      "budgetMax": 15000,
+      "idealDaysMin": 3,
+      "idealDaysMax": 5,
+      "type": ["Beach", "Cultural"],
+      "description": "French colonial architecture, beaches, and cafes."
+    },
+    {
+      "name": "Agra",
+      "state": "Uttar Pradesh",
+      "bestSeason": ["Winter", "Autumn"],
+      "budgetMin": 5000,
+      "budgetMax": 12000,
+      "idealDaysMin": 1,
+      "idealDaysMax": 3,
+      "type": ["Cultural", "Heritage"],
+      "description": "Taj Mahal, forts, and rich Mughal heritage."
+    },
+    {
+      "name": "Khajuraho",
+      "state": "Madhya Pradesh",
+      "bestSeason": ["Winter", "Monsoon"],
+      "budgetMin": 4000,
+      "budgetMax": 10000,
+      "idealDaysMin": 2,
+      "idealDaysMax": 3,
+      "type": ["Heritage", "Cultural"],
+      "description": "Ancient temples with erotic sculptures and rich history."
+    },
+    {
+      "name": "Mahabalipuram",
+      "state": "Tamil Nadu",
+      "bestSeason": ["Winter", "Summer"],
+      "budgetMin": 5000,
+      "budgetMax": 10000,
+      "idealDaysMin": 2,
+      "idealDaysMax": 4,
+      "type": ["Cultural", "Heritage"],
+      "description": "Rock-cut temples, beaches, and architectural marvels."
+    }
+  ]
+  
