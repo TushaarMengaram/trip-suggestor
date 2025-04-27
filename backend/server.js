@@ -16,6 +16,22 @@ const destinations = JSON.parse(fs.readFileSync('destinations.json', 'utf-8'));
 const images = JSON.parse(fs.readFileSync('images.json', 'utf-8'));
 
 
+// API to fetch all unique trip types
+app.get('/tripTypes', (req, res) => {
+  // Extract all trip types from the destinations
+  const tripTypes = new Set();
+  
+  destinations.forEach(place => {
+      place.type.forEach(type => {
+          tripTypes.add(type);
+      });
+  });
+
+  // Convert the Set to an array and send it as the response
+  res.json(Array.from(tripTypes));
+});
+
+
 // API to suggest trips
 app.post('/suggest', (req, res) => {
     const { budget, season, days, tripType } = req.body;
@@ -47,6 +63,8 @@ app.post('/suggest', (req, res) => {
   
     res.json(enrichedSuggestions);
   });
+
+
   
 
 // Health check route (optional, good practice)

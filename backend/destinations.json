@@ -165,8 +165,8 @@
       "description": "Houseboats, backwaters, and serene landscapes."
     },
     {
-      "name": "Andaman and Nicobar Islands",
-      "state": "Andaman and Nicobar Islands",
+      "name": "Andaman Islands",
+      "state": "Andaman Islands",
       "bestSeason": ["Winter", "Monsoon"],
       "budgetMin": 15000,
       "budgetMax": 30000,
