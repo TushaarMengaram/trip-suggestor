@@ -74,7 +74,6 @@
 
         .card:hover {
             transform: scale(1.05);
-            /* Slightly enlarge the card on hover */
         }
 
         .card img {
@@ -145,6 +144,26 @@
         .close:hover {
             color: black;
         }
+
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 2s linear infinite;
+            margin-left: 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
@@ -164,11 +183,16 @@
             <input type="number" id="days" placeholder="Enter number of days" />
             <select id="tripType">
                 <option value="">Select Trip Type</option>
+                <!-- Options will be populated dynamically -->
                 <option value="Nature">Nature</option>
                 <option value="Adventure">Adventure</option>
                 <option value="Hill Station">Hill Station</option>
+                <option value="Heritage">Heritage</option> <!-- Added Heritage option here -->
+                <option value="Beach">Beach</option>
+                <option value="Backwaters">Backwaters</option>
             </select>
             <button onclick="getSuggestions()">Get Suggestions</button>
+            <div class="loader" id="loading" style="display: none;"></div>
         </div>
 
         <div class="card-container" id="suggestions"></div>
@@ -187,6 +211,21 @@
     </div>
 
     <script>
+
+        // Fetch and populate trip types on page load
+        fetch('http://localhost:5000/tripTypes')
+            .then(response => response.json())
+            .then(data => {
+                const tripTypeDropdown = document.getElementById('tripTypeDropdown');
+                data.forEach(type => {
+                    const option = document.createElement('option');
+                    option.value = type;
+                    option.textContent = type;
+                    tripTypeDropdown.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error fetching trip types:', error));
+
         function openModal(place) {
             document.getElementById('modalImage').src = place.image;
             document.getElementById('modalTitle').textContent = place.name;
@@ -203,6 +242,9 @@
         }
 
         async function getSuggestions() {
+            // Show the loading spinner
+            document.getElementById('loading').style.display = "block";
+
             const budget = document.getElementById('budget').value;
             const season = document.getElementById('season').value;
             const days = document.getElementById('days').value;
@@ -223,25 +265,28 @@
 
             const data = await response.json();
 
+            // Hide the loading spinner
+            document.getElementById('loading').style.display = "none";
+
             const suggestionsContainer = document.getElementById('suggestions');
             suggestionsContainer.innerHTML = '';
 
             if (data.length === 0) {
-                suggestionsContainer.innerHTML = '<p>No destinations found.</p>';
+                suggestionsContainer.innerHTML = '<p>No destinations found. Please try again with different criteria.</p>';
             } else {
                 data.forEach(place => {
                     const card = document.createElement('div');
                     card.className = 'card';
 
                     card.innerHTML = `
-                <img src="${place.image}" alt="${place.name}">
-                <div class="card-body">
-                    <h3>${place.name}</h3>
-                    <p>${place.description}</p>
-                    <p class="budget">Budget: ₹${place.budgetMin} - ₹${place.budgetMax}</p>
-                    <p class="days">Ideal Days: ${place.idealDaysMin} - ${place.idealDaysMax} days</p>
-                </div>
-            `;
+                        <img src="${place.image}" alt="${place.name}">
+                        <div class="card-body">
+                            <h3>${place.name}</h3>
+                            <p>${place.description}</p>
+                            <p class="budget">Budget: ₹${place.budgetMin} - ₹${place.budgetMax}</p>
+                            <p class="days">Ideal Days: ${place.idealDaysMin} - ${place.idealDaysMax} days</p>
+                        </div>
+                    `;
 
                     card.addEventListener('click', () => openModal(place));
 
@@ -249,8 +294,6 @@
                 });
             }
         }
-
-
     </script>
 
 </body>
